@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: teal;
+}
+
+a:hover, a:focus {
+    color: whitesmoke;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #222;
+    border-bottom: 2px solid teal;
+    padding: 1rem 0;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin-right: 6px;
+    background: #000;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: teal;
+    transition: all 0.25s;
+}
+
+main {
+    padding: 3rem 0;
+}
+
+.list-group {
+    margin: 1.5rem 0;
+}
+
+.list-item {
+    background-color: #222;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.list-item h3 {
+    margin-bottom: 10px;
+}
+
+.list-item h3 a {
+    text-decoration: none;
+}
+
+.list-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.list-item p {
+    font-size: 0.95rem;
+}
+
+.list-item p small {
+    font-size: 0.85rem;
+    color: #777;
+}

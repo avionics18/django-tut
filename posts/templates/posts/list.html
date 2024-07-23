@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block content %}
+    <h1>Posts</h1>
+    <hr>
+    <div class="list-group">
+        {% for post in posts %}
+            <article class="list-item">
+                <h3>
+                    <a href="{% url 'posts:single' slug=post.slug %}">{{ post.title }}</a>
+                </h3>
+                <p><small>{{ post.date }}</small></p>
+                <p>{{ post.body }}</p>
+            </article>
+        {% endfor %}
+    </div>
+{% endblock %}
