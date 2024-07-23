@@ -34,7 +34,7 @@ DEBUG = True
 if os.environ.get('ENVIRONMENT') == 'production':
     DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
